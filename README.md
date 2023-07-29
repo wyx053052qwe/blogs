@@ -1,4 +1,4 @@
-![Laravel诗词博客](http://qiniu.qqphp.com/uugai.com_1573111132577.png)
+![Laravel诗词博客](https://llcwyx.com/uploads/img/uugai.com_1573111132577.png)
 
 > Laravel诗词博客-匠心编程,热爱生活。
 
@@ -6,7 +6,7 @@
 
 > 本博客会一直维护和更新,已有基础上做调整,最大程度上确保原有用户可以 pull 代码,获取最佳体验。如果你在安装过程中遇到了问题,请提交 `Issue` ,我将会为你提供帮助。
 
-![Laravel诗词博客](http://qiniu.qqphp.com/QQ%E6%88%AA%E5%9B%BE20191018102559.png)
+![Laravel诗词博客](https://llcwyx.com/uploads/img/QQ%E6%88%AA%E5%9B%BE20191018102559.png)
 
 #### 简介
 1. 采用 Laravel5.8 版本框架搭建
@@ -42,10 +42,10 @@
 #### 如何搭建此博客？
 > 博客开源发布以来,受到了很多人的认同和赞美,同时也收到了很多大家给出的有效建议,在此很感谢大家支持。不过在安装过程中由于大家安装环境不同,部分朋友可能遇到个别小问题难以解决,请提交 `Issue` ,我将会为你提供帮助,**务必仔细查阅** ,都由作者经过多次实际操作,写的较为详尽。
 
-- ##### Laravel 诗词博客开源地址
- > GitHub项目地址： `https://github.com/qqphp-com`
+- ##### laravel 博客开源地址
+ > GitHub项目地址： `https://github.com/wyx053052qwe/blogs`
 
- > 码云项目地址: `https://gitee.com/qqphp`
+ 
 
  > 如果你喜欢此博客,或者对你有帮助,可以 **Star** 支持,十分感谢。安装教程写的比较详情,请仔细查阅。
 
@@ -151,7 +151,7 @@ memory_limit = 128m ;每个 PHP 页面所吃掉的最大内存。
 
 
 #### 执照
-Laravel 诗词博客根据 [MIT许可证（MIT）](https://github.com/wyx053052qwe)获得许可。
+laravel 博客根据 [MIT许可证（MIT）](https://github.com/wyx053052qwe)获得许可。
 
 #### 博客修复与调整日志
  - *2019年10月01日* 博客第一个版本正式上线与开源
