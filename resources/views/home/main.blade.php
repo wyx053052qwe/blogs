@@ -79,7 +79,7 @@
 </head>
 
 <body onhashchange="fix_the_nav();">
-    <?php include_once("baidu_js_push.php") ?>
+<?php include_once("baidu_js_push.php") ?>
 <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
         <div class="navbar-translate">
@@ -95,27 +95,27 @@
         <div class="collapse navbar-collapse justify-content-end" id="navigation">
             <ul class="navbar-nav">
                 @foreach($nav_list as $nav)
-                <li class="dropdown nav-item">
-                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
-                        {{$nav->nav_title}}
-                    </a>
-                    @php
-                        if(!isset($nav->son_nav)) continue;
-                    @endphp
-                    <div class="dropdown-menu dropdown-menu-right dropdown-success">
-                        @foreach($nav->son_nav as $son_nav)
-                            <a href="{{url($son_nav->nav_route,['nav_id'=>$son_nav->id])}}" class="dropdown-item">
-                                {{$son_nav->nav_title}}
-                            </a>
-                        @endforeach
-                    </div>
-                </li>
+                    <li class="dropdown nav-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false">
+                            {{$nav->nav_title}}
+                        </a>
+                        @php
+                            if(!isset($nav->son_nav)) continue;
+                        @endphp
+                        <div class="dropdown-menu dropdown-menu-right dropdown-success">
+                            @foreach($nav->son_nav as $son_nav)
+                                <a href="{{url($son_nav->nav_route,['nav_id'=>$son_nav->id])}}" class="dropdown-item">
+                                    {{$son_nav->nav_title}}
+                                </a>
+                            @endforeach
+                        </div>
+                    </li>
                 @endforeach
-                <!--<li class="dropdown nav-item">-->
-                <!--    <a class="nav-link" href="{{url('message')}}">-->
-                <!--        留言-->
-                <!--    </a>-->
-                <!--</li>-->
+                <li class="dropdown nav-item">
+                    <a class="nav-link" href="{{url('message')}}">
+                        留言
+                    </a>
+                </li>
                 <li class="dropdown nav-item">
                     <a class="nav-link" href="{{url('friends')}}">
                         优秀博客
@@ -138,7 +138,7 @@
     </div>
 </nav>
 <div id="pjax-container">
-@yield('content')
+    @yield('content')
 </div>
 <footer class="footer footer-black  footer-white ">
     <div class="container">
@@ -355,47 +355,47 @@
     }
 </script>
 // <script>
-//  $(document).keydown(function(event){
-//               if(even.keyCode == 123){
-//                     js();
-//               }
-//             })
+    //  $(document).keydown(function(event){
+    //               if(even.keyCode == 123){
+    //                     js();
+    //               }
+    //             })
 
-//     ((function js() {
-//     var callbacks = [],
-//         timeLimit = 50,
-//         open = false;
-//     setInterval(loop, 1);
-//     return {
-//         addListener: function(fn) {
-//             callbacks.push(fn);
-//         },
-//         cancleListenr: function(fn) {
-//             callbacks = callbacks.filter(function(v) {
-//                 return v !== fn;
-//             });
-//         }
-//     }
+    //     ((function js() {
+    //     var callbacks = [],
+    //         timeLimit = 50,
+    //         open = false;
+    //     setInterval(loop, 1);
+    //     return {
+    //         addListener: function(fn) {
+    //             callbacks.push(fn);
+    //         },
+    //         cancleListenr: function(fn) {
+    //             callbacks = callbacks.filter(function(v) {
+    //                 return v !== fn;
+    //             });
+    //         }
+    //     }
 
-//     function loop() {
-//         var startTime = new Date();
-//         debugger;
-//         if (new Date() - startTime > timeLimit) {
-//             if (!open) {
-//                 callbacks.forEach(function(fn) {
-//                     fn.call(null);
-//                 });
-//             }
-//             open = true;
-//             window.stop();
-//             alert('大佬别扒了！');
-//             document.body.innerHTML = "";
-//         } else {
-//             open = false;
-//         }
-//     }
-// })()).addListener(function() {
-//     window.location.reload();
-// });
-// </script>
+    //     function loop() {
+    //         var startTime = new Date();
+    //         debugger;
+    //         if (new Date() - startTime > timeLimit) {
+    //             if (!open) {
+    //                 callbacks.forEach(function(fn) {
+    //                     fn.call(null);
+    //                 });
+    //             }
+    //             open = true;
+    //             window.stop();
+    //             alert('大佬别扒了！');
+    //             document.body.innerHTML = "";
+    //         } else {
+    //             open = false;
+    //         }
+    //     }
+    // })()).addListener(function() {
+    //     window.location.reload();
+    // });
+    // </script>
 </html>

@@ -66,9 +66,9 @@
                             <li>
                                 <b>{{$article_click}}</b>次阅读
                             </li>
-                            <!--<li>-->
-                            <!--    <b>{{$total_msg}}</b>条留言-->
-                            <!--</li>-->
+                            <li>
+                                <b>{{$total_msg}}</b>条留言
+                            </li>
                         </ul>
                     </div>
                     <hr>
@@ -89,21 +89,21 @@
                             <p id="hitokoto"></p>
                         </div>
                     </div>
-                    <!--<div class="col-sm-12 border p-2">-->
-                    <!--    <div class="row">-->
-                    <!--        <div class="col-sm-12">-->
-                    <!--            <input type="email" class="form-control" name="email" id="exampleInputEmail1"-->
-                    <!--                   aria-describedby="emailHelp" placeholder="输入邮箱订阅我">-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--    <div class="row">-->
-                    <!--        <div class="col-sm-12 mt-1">-->
-                    <!--            <button class="btn btn-sm btn-primary btn-round float-right" onclick="subscribe_me()">-->
-                    <!--                <i class="fa fa-heart"></i> 订阅-->
-                    <!--            </button>-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                   <div class="col-sm-12 border p-2">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                                       aria-describedby="emailHelp" placeholder="输入邮箱订阅我">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12 mt-1">
+                                <button class="btn btn-sm btn-primary btn-round float-right" onclick="subscribe_me()">
+                                    <i class="fa fa-heart"></i> 订阅
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-sm-12 mt-2 p-0">
                         <h5>博客公告</h5>
                         <div class="row">
@@ -331,7 +331,7 @@
             $("#search_form").remove();
             return false;
         }
-        
+
         function tag_article($tag_content) {
             // 取得要提交页面的URL地址
             var url = "{{{url()->current()}}}";

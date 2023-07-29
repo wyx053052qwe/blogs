@@ -86,60 +86,60 @@
                         </a>
                     </div>
                 </div>
-                <!--<div class="form-group mt-3">-->
-                <!--    <label for="exampleFormControlTextarea1">给我留言</label>-->
-                <!--    <textarea class="form-control textarea-limited" id="msg_content" placeholder="读书不觉已春深，一寸光阴一寸金。" rows="3" maxlength="150"></textarea>-->
-                <!--</div>-->
+                <div class="form-group mt-3">
+                    <label for="exampleFormControlTextarea1">给我留言</label>
+                   <textarea class="form-control textarea-limited" id="msg_content" placeholder="读书不觉已春深，一寸光阴一寸金。" rows="3" maxlength="150"></textarea>
+                </div>
             </div>
         </div>
-        <!--<div class="row">-->
-        <!--    <div class="col-sm-9">-->
-        <!--        <div class="row">-->
-        <!--            <div class="col-sm-3" style="margin-bottom: 5px;">-->
-        <!--                <div class="input-group">-->
-        <!--                    <input type="text" name="msg_blog_name" class="form-control" placeholder="博客名称">-->
-        <!--                    <div class="input-group-append">-->
-        <!--                        <span class="input-group-text"><i class="nc-icon nc-paper" aria-hidden="true"></i></span>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-sm-3" style="margin-bottom: 5px;">-->
-        <!--                <div class="input-group">-->
-        <!--                    <input type="text" name="msg_blog_link" class="form-control" placeholder="博客网址">-->
-        <!--                    <div class="input-group-append">-->
-        <!--                        <span class="input-group-text"><i class="nc-icon nc-planet" aria-hidden="true"></i></span>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-sm-3" style="margin-bottom: 5px;">-->
-        <!--                <div class="input-group">-->
-        <!--                    <input type="text" name="msg_blog_contact" class="form-control" placeholder="微信/QQ/邮箱">-->
-        <!--                    <div class="input-group-append">-->
-        <!--                        <span class="input-group-text"><i class="nc-icon nc-chat-33" aria-hidden="true"></i></span>-->
-        <!--                    </div>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--            <div class="col-sm-3" style="margin-bottom: 5px;">-->
-        <!--                <div class="input-group">-->
-        <!--                    <button class="btn btn-primary btn-round" id="submit_msg">-->
-        <!--                        <i class="fa fa-heart"></i>提 交-->
-        <!--                    </button>-->
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
-        <!--    </div>-->
-        <!--</div>-->
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-3" style="margin-bottom: 5px;">
+                        <div class="input-group">
+                            <input type="text" name="msg_blog_name" class="form-control" placeholder="博客名称">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="nc-icon nc-paper" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 5px;">
+                        <div class="input-group">
+                            <input type="text" name="msg_blog_link" class="form-control" placeholder="博客网址">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="nc-icon nc-planet" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 5px;">
+                        <div class="input-group">
+                            <input type="text" name="msg_blog_contact" class="form-control" placeholder="微信/QQ/邮箱">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="nc-icon nc-chat-33" aria-hidden="true"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3" style="margin-bottom: 5px;">
+                        <div class="input-group">
+                            <button class="btn btn-primary btn-round" id="submit_msg">
+                                <i class="fa fa-heart"></i>提 交
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row">
             <div class="col-sm-9">
                 <div class="container">
-                    <!--<div class="row">-->
-                    <!--    <div class="col-md-12 mb-2">-->
-                    <!--        <div class="media-area">-->
-                    <!--            <h3 class="mt-0" id="msg_record">留言条数·{{$article_message->total()}}</h3>-->
-                    <!--            <input type="hidden" name="msg_total" value="{{$article_message->total()}}">-->
-                    <!--        </div>-->
-                    <!--    </div>-->
-                    <!--</div>-->
+                    <div class="row">
+                        <div class="col-md-12 mb-2">
+                            <div class="media-area">
+                                <h3 class="mt-0" id="msg_record">留言条数·{{$article_message->total()}}</h3>
+                                <input type="hidden" name="msg_total" value="{{$article_message->total()}}">
+                            </div>
+                        </div>
+                    </div>
                     <div class="row" id="msg_board">
                         @foreach($article_message as $k => $v)
                             <div class="col-sm-12 ml-auto">
@@ -176,7 +176,7 @@
                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
             }
         });
-        
+
         $(function () {
             markdown();
         });
@@ -201,7 +201,7 @@
                 }).reset();
             });
         }
-        
+
         $("#submit_msg").click(function(){
             var msg_content = $("#msg_content").val();
             var msg_blog_name = $("input[name='msg_blog_name']").val();
