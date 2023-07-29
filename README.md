@@ -151,7 +151,7 @@ memory_limit = 128m ;每个 PHP 页面所吃掉的最大内存。
 
 
 #### 执照
-Laravel 诗词博客根据 [MIT许可证（MIT）](https://github.com/qqphp-com)获得许可。
+Laravel 诗词博客根据 [MIT许可证（MIT）](https://github.com/wyx053052qwe)获得许可。
 
 #### 博客修复与调整日志
  - *2019年10月01日* 博客第一个版本正式上线与开源
