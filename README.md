@@ -1,12 +1,12 @@
-![Laravel诗词博客](https://llcwyx.com/uploads/img/uugai.com_1573111132577.png)
+![Laravel博客](https://llcwyx.com/uploads/img/uugai.com_1573111132577.png)
 
-> Laravel诗词博客-匠心编程,热爱生活。
+> Laravel博客-匠心编程,热爱生活。
 
 > 感謝各位朋友的支持,很开心和你分享我的代码,希望大家也能多写博客,提高自己能力的同时又能以后回顾所学的知识。饮水思源,你的 **Star** 就是对我最好的支持。
 
 > 本博客会一直维护和更新,已有基础上做调整,最大程度上确保原有用户可以 pull 代码,获取最佳体验。如果你在安装过程中遇到了问题,请提交 `Issue` ,我将会为你提供帮助。
 
-![Laravel诗词博客](https://llcwyx.com/uploads/img/QQ%E6%88%AA%E5%9B%BE20191018102559.png)
+![Laravel博客](https://llcwyx.com/uploads/img/QQ%E6%88%AA%E5%9B%BE20191018102559.png)
 
 #### 简介
 1. 采用 Laravel5.8 版本框架搭建
@@ -103,7 +103,7 @@
 博客后台访问网址： `域名/admin` ,默认管理员账号 `admin`,密码 `admin` ,开始愉快博客写作之旅。
 
 #### 鸣谢
- `Laravel诗词博客` 本博客致谢开源作者们开发的优秀插件或服务。
+ `Laravel博客` 本博客致谢开源作者们开发的优秀插件或服务。
  - [Laravel](https://laravel.com)
  - [Laravel-admin](https://github.com/z-song/laravel-admin)
  - [Jquery-pjax](https://github.com/defunkt/jquery-pjax)
