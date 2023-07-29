@@ -1,0 +1,10 @@
+# robots.txt
+User-agent: *
+Disallow: 
+Crawl-delay: 5
+Disallow: /cgi-bin/
+Disallow: /bin/
+Disallow: /app/
+Disallow: /config/
+Disallow: /routes/
+Sitemap: sitemap.xml
